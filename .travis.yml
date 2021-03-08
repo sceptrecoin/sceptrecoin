@@ -53,7 +53,7 @@ env:
     - SDK_URL=https://bitcoincore.org/depends-sources/sdks
     - WINEDEBUG=fixme-all
     - DOCKER_PACKAGES="build-essential libtool autotools-dev automake pkg-config bsdmainutils curl git ca-certificates ccache"
-    - CACHE_ERR_MSG="Error! Initial build successful, but not enough time remains to run later build stages and tests. Please manually re-run this job by using the travis restart button or asking a litecoin maintainer to restart. The next run should not time out because the build cache has been saved."
+    - CACHE_ERR_MSG="Error! Initial build successful, but not enough time remains to run later build stages and tests. Please manually re-run this job by using the travis restart button or asking a sceptrecoin maintainer to restart. The next run should not time out because the build cache has been saved."
     - LITECOIN_SCRYPT=0
 before_install:
   - set -o errexit; source .travis/test_03_before_install.sh

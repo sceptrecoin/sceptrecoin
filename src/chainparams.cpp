@@ -122,8 +122,8 @@ public:
         // release ASAP to avoid it where possible.
         vSeeds.emplace_back("seed-a.sceptrecoin.org");
         //vSeeds.emplace_back("dnsseed.thrasher.io");
-        //vSeeds.emplace_back("dnsseed.litecointools.com");
-        //vSeeds.emplace_back("dnsseed.litecoinpool.org");
+        //vSeeds.emplace_back("dnsseed.sceptrecointools.com");
+        //vSeeds.emplace_back("dnsseed.sceptrecoinpool.org");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,34);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -231,7 +231,7 @@ public:
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
         vSeeds.emplace_back("test-a.sceptrecoin.org");
-        //vSeeds.emplace_back("seed-b.litecoin.loshan.co.uk");
+        //vSeeds.emplace_back("seed-b.sceptrecoin.loshan.co.uk");
         //vSeeds.emplace_back("dnsseed-testnet.thrasher.io");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
