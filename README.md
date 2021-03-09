@@ -1,7 +1,7 @@
 Sceptrecoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/sceptrecoin-project/sceptrecoin.svg?branch=master)](https://travis-ci.org/sceptrecoin-project/sceptrecoin)
+[![Build Status](https://travis-ci.org/sceptrecoin/sceptrecoin.svg?branch=master)](https://travis-ci.org/sceptrecoin/sceptrecoin)
 
 https://sceptrecoin.org
 
