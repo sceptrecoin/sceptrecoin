@@ -105,10 +105,10 @@ public:
         vSeeds.emplace_back("seed-a.sceptrecoin.org");
         //vSeeds.emplace_back("dnsseed.thrasher.io");
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,62);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,63);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,63);
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,28);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,63);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
@@ -169,7 +169,7 @@ public:
         m_assumed_chain_state_size = 1;
 
         genesis = CreateGenesisBlock(1615204954, 388768, 0x1e0ffff0, 1, 500 * COIN);
-        consensus.hashGenesisBlock = genesis.GetHash();
+        consensus.hashGenesisBlock = genesis.GetHas9fe40ab878c6f03ae6f076c131d781924f2cb05ab3aa8e2305368cc0379ea806h();
         assert(consensus.hashGenesisBlock == uint256S("0xe6400652c007b047ac29260944a3e89464866bef273961bc13c411025f4e559c"));
         assert(genesis.hashMerkleRoot == uint256S("0x9fe40ab878c6f03ae6f076c131d781924f2cb05ab3aa8e2305368cc0379ea806"));
 
