@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-COPY sceptrecoin.conf ~/.sceptrecoin/sceptrecoin.conf
+COPY sceptrecoin.conf /root/.sceptrecoin/sceptrecoin.conf
 COPY . /sceptrecoin
 WORKDIR /sceptrecoin
 
@@ -30,4 +30,4 @@ RUN make install
 #open service port
 EXPOSE 8141 18141
 
-CMD ["sceptrecoind", "--conf=~/.sceptrecoin/sceptrecoin.conf", "--printtoconsole"]
+CMD ["sceptrecoind", "--conf=/root/.sceptrecoin/sceptrecoin.conf", "--printtoconsole"]
