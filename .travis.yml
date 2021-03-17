@@ -56,6 +56,8 @@ env:
     - CACHE_ERR_MSG="Error! Initial build successful, but not enough time remains to run later build stages and tests. Please manually re-run this job by using the travis restart button or asking a sceptrecoin maintainer to restart. The next run should not time out because the build cache has been saved."
     - LITECOIN_SCRYPT=0
 before_install:
+  - sudo apt-get update
+  - sudo apt-get -y install xz-utils
   - set -o errexit; source .travis/test_03_before_install.sh
 install:
   - set -o errexit; source .travis/test_04_install.sh
